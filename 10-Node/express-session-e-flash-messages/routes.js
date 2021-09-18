@@ -12,8 +12,8 @@ function meuMiddleware(req, res, next) {
 }
 
 route.get('/', meuMiddleware, homeController.paginaInicial, function(req, res) {
-    console.log('Ainda estou aqui.')
-    console.log(`'Último middleware' olha o que rem na req.session.nome ${req.session.nome}`)
+    // console.log('Ainda estou aqui.')
+    // console.log(`'Último middleware' olha o que rem na req.session.nome ${req.session.nome}`)
 });
 
 route.post('/', homeController.trataPost)
